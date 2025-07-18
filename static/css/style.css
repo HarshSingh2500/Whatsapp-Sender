@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #25D366;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #128C7E;
+    color: white;
+}
+
+.upload-section {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.instructions {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}

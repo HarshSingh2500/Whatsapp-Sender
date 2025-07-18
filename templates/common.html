@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Common Message</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="upload-section">
+    <h2>Upload Excel for Common Message</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="excel" accept=".xlsx" required><br><br>
+      <textarea name="message" placeholder="Enter your message here..." rows="4" cols="50" required></textarea><br>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>

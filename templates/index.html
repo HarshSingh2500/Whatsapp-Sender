@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WhatsApp Message Sender</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header><h1>WhatsApp Message Sender</h1></header>
+  <div class="instructions">
+            <p><strong>Instructions:</strong></p>
+            <ul>
+                <li>Messages are sent using WhatsApp Web, so ensure you're logged in on your default browser.</li>
+                <li>Each message is scheduled with a 2-minute buffer to allow WhatsApp Web to open and send it.</li>
+                <li>Messages are sent <strong>one by one</strong>, each with a delay of about 15–20 seconds.</li>
+                <li><strong>Do not close the browser window</strong> that opens during the message-sending process.</li>
+                <li>The process runs in the background — you're free to return to the home page or upload another file.</li>
+                <li>Excel files should be in <strong>.xlsx</strong> format with correct column names:
+                    <ul>
+                        <li><code>Phone</code> column for all files.</li>
+                        <li><code>Message</code> column for personalized messages.</li>
+                    </ul>
+                </li>
+                <li>Make sure phone numbers include country code, e.g., <code>919876543210</code></li>
+            </ul>
+        </div>
+  <div class="container">
+    <button class="btn" onclick="location.href='/common'">Send Common Message</button>
+    <button class="btn" onclick="location.href='/personalized'">Send Different Messages</button>
+  </div>
+</body>
+</html>
